@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود به کیجارو</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="/">کیجارو</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">خانه</a></li>
+                <li><a href="/tours.html">تورها</a></li>
+                <li><a href="/about.html">درباره ما</a></li>
+                <li><a href="/rules.html">قوانین</a></li>
+                <li><a href="/contact.html">تماس با ما</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="/login.html" class="btn btn-login">ورود</a>
+                <a href="/register.html" class="btn btn-register">ثبت نام</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="auth-container">
+                <div class="auth-box">
+                    <h2>ورود به حساب کاربری</h2>
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="email">ایمیل</label>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="ایمیل خود را وارد کنید" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">رمز عبور</label>
+                            <div class="input-group">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" placeholder="رمز عبور خود را وارد کنید" required>
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <span>مرا به خاطر بسپار</span>
+                            </label>
+                            <a href="/forgot-password.html" class="forgot-password">فراموشی رمز عبور؟</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">ورود</button>
+                    </form>
+                    <div class="auth-separator">
+                        <span>یا</span>
+                    </div>
+                    <div class="social-login">
+                        <button class="btn btn-social btn-google">
+                            <i class="fab fa-google"></i>
+                            <span>ورود با گوگل</span>
+                        </button>
+                    </div>
+                    <p class="auth-redirect">
+                        حساب کاربری ندارید؟
+                        <a href="/register.html">ثبت نام کنید</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>درباره کیجارو</h3>
+                <p>سامانه رزرو تور و خدمات گردشگری</p>
+            </div>
+            <div class="footer-section">
+                <h3>تماس با ما</h3>
+                <p>ایمیل: info@keyjaro.com</p>
+                <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+            </div>
+            <div class="footer-section">
+                <h3>شبکه‌های اجتماعی</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; ۱۴۰۳ کیجارو. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html> 

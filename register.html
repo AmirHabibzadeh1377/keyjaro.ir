@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام در کیجارو</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="/">کیجارو</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">خانه</a></li>
+                <li><a href="/tours.html">تورها</a></li>
+                <li><a href="/about.html">درباره ما</a></li>
+                <li><a href="/rules.html">قوانین</a></li>
+                <li><a href="/contact.html">تماس با ما</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="/login.html" class="btn btn-login">ورود</a>
+                <a href="/register.html" class="btn btn-register">ثبت نام</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2 class="text-center mb-2">ثبت نام در کیجارو</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">نام و نام خانوادگی</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">شماره موبایل</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">تکرار رمز عبور</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-register" style="width: 100%;">ثبت نام</button>
+                </div>
+                <p class="text-center mt-2">
+                    قبلاً ثبت نام کرده‌اید؟ <a href="/login.html">وارد شوید</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>درباره کیجارو</h3>
+                <p>سامانه رزرو تور و خدمات گردشگری</p>
+            </div>
+            <div class="footer-section">
+                <h3>تماس با ما</h3>
+                <p>ایمیل: info@keyjaro.com</p>
+                <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+            </div>
+            <div class="footer-section">
+                <h3>شبکه‌های اجتماعی</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; ۱۴۰۳ کیجارو. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html> 
