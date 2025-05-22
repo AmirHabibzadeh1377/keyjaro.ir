@@ -1,0 +1,453 @@
+/* استایل‌های مخصوص صفحه تور شیراز */
+.tour-details {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.tour-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.tour-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.tour-meta {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.tour-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.tour-meta i {
+    font-size: 1.4rem;
+}
+
+.tour-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tour-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tour-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.tour-description {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+}
+
+.tour-description h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tour-description h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.tour-description h3 {
+    color: #34495e;
+    margin: 2rem 0 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.tour-description h4 {
+    color: #7f8c8d;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.tour-description ul {
+    list-style: none;
+    padding-right: 1.5rem;
+}
+
+.tour-description ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-right: 1.5rem;
+    line-height: 1.6;
+}
+
+.tour-description ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    right: 0;
+    font-size: 1.2rem;
+}
+
+.tour-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.service-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.service-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+}
+
+.service-item h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.tour-attractions {
+    margin-bottom: 3rem;
+}
+
+.tour-attractions h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tour-attractions h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.attraction-item {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.attraction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.attraction-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.attraction-item h3 {
+    padding: 1.5rem;
+    color: #2c3e50;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.attraction-item p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.tour-features {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.tour-features h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tour-features h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.tour-features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.tour-features ul li {
+    padding: 1rem;
+    color: #666;
+    position: relative;
+    padding-right: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.tour-features ul li:hover {
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tour-features ul li:before {
+    content: "✓";
+    color: #27ae60;
+    position: absolute;
+    right: 1rem;
+    font-weight: bold;
+}
+
+.tour-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.info-card h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    padding: 1rem 0;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    line-height: 1.6;
+}
+
+.info-card ul li:last-child {
+    border-bottom: none;
+}
+
+.tour-contact {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    padding: 3rem;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.tour-contact h2 {
+    color: white;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tour-contact h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-info p:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+.contact-info i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* استایل‌های ریسپانسیو */
+@media (max-width: 1200px) {
+    .tour-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tour-services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tour-header {
+        padding: 2rem 1rem;
+    }
+
+    .tour-header h1 {
+        font-size: 2rem;
+    }
+
+    .tour-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .tour-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-services {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .tour-description,
+    .service-item,
+    .attraction-item,
+    .info-card {
+        padding: 1.5rem;
+    }
+} 
