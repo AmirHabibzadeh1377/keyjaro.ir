@@ -84,17 +84,17 @@ function initializeEventListeners() {
 }
 
 // Handle navigation
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const href = link.getAttribute('href');
-        if (href.startsWith('/')) {
-            loadContent(href);
-            // Update URL without page reload
-            history.pushState(null, '', href);
-        }
-    });
-});
+// document.querySelectorAll('.nav-links a').forEach(link => {
+//     link.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         const href = link.getAttribute('href');
+//         if (href.startsWith('/')) {
+//             loadContent(href);
+//             // Update URL without page reload
+//             history.pushState(null, '', href);
+//         }
+//     });
+// });
 
 // Handle browser back/forward buttons
 window.addEventListener('popstate', () => {

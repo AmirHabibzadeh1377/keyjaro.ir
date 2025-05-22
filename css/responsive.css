@@ -50,6 +50,10 @@
         margin-top: 1rem;
     }
 
+    .auth-buttons .btn-register {
+        color: var(--white);
+    }
+
     .mobile-menu-btn {
         display: block;
     }

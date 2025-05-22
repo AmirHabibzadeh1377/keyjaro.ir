@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تورهای کیجارو</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تورها - کیجارو</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="main-nav">
             <div class="logo">
-                <a href="/">کیجارو</a>
+                <a href="index.html">کیجارو</a>
             </div>
             <ul class="nav-links">
-                <li><a href="/">خانه</a></li>
-                <li><a href="/tours.html">تورها</a></li>
-                <li><a href="/about.html">درباره ما</a></li>
-                <li><a href="/rules.html">قوانین</a></li>
-                <li><a href="/contact.html">تماس با ما</a></li>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="tours.html">تورها</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="rules.html">قوانین</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
             </ul>
             <div class="auth-buttons">
-                <a href="https://tourun.ir/user/login" class="btn btn-login">ورود</a>
-                <a href="https://tourun.ir/user/register" class="btn btn-register">ثبت نام</a>
+                <a href="login.html" class="btn btn-login">ورود</a>
+                <a href="register.html" class="btn btn-register">ثبت نام</a>
             </div>
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -32,35 +33,523 @@
     </header>
 
     <main>
-        <div class="tours-page">
-            <h1 class="text-center mb-2">تورهای موجود</h1>
-            
-            <div class="filters-container">
-                <form id="filter-form" class="filter-form">
-                    <div class="filter-group">
-                        <label for="destination">مقصد</label>
-                        <input type="text" id="destination" name="destination" placeholder="نام شهر یا کشور">
-                    </div>
-                    <div class="filter-group">
-                        <label for="minPrice">حداقل قیمت</label>
-                        <input type="number" id="minPrice" name="minPrice" placeholder="تومان">
-                    </div>
-                    <div class="filter-group">
-                        <label for="maxPrice">حداکثر قیمت</label>
-                        <input type="number" id="maxPrice" name="maxPrice" placeholder="تومان">
-                    </div>
-                    <div class="filter-group">
-                        <label for="startDate">تاریخ شروع</label>
-                        <input type="date" id="startDate" name="startDate">
-                    </div>
-                    <button type="submit" class="btn btn-filter">فیلتر</button>
-                </form>
+        <section class="tours-section">
+            <div class="section-header">
+                <h1>تورهای موجود</h1>
+                <p>بهترین تورهای داخلی و خارجی با قیمت‌های مناسب</p>
             </div>
+            <div class="tours-grid">
+                <!-- Tour 1 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور استانبول" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور استانبول</h3>
+                        <p class="tour-description">سفری ۵ روزه به شهر رویایی استانبول با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۵ فروردین ۱۴۰۳</span>
+                            <span class="tour-duration">۵ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۲,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="tour-grid">
-                <!-- Tour cards will be dynamically loaded here -->
+                <!-- Tour 2 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور کیش" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور کیش</h3>
+                        <p class="tour-description">سفری ۴ روزه به جزیره زیبای کیش با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۰ فروردین ۱۴۰۳</span>
+                            <span class="tour-duration">۴ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۸,۹۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 3 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور دبی" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور دبی</h3>
+                        <p class="tour-description">سفری ۶ روزه به شهر مدرن دبی با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۵ فروردین ۱۴۰۳</span>
+                            <span class="tour-duration">۶ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۵,۷۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 4 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور آنتالیا" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور آنتالیا</h3>
+                        <p class="tour-description">سفری ۵ روزه به شهر زیبای آنتالیا با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۳۰ فروردین ۱۴۰۳</span>
+                            <span class="tour-duration">۵ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۱,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 5 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور مشهد" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور مشهد</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر مقدس مشهد با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۵ اردیبهشت ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 6 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور بانکوک" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور بانکوک</h3>
+                        <p class="tour-description">سفری ۷ روزه به شهر بانکوک با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۰ اردیبهشت ۱۴۰۳</span>
+                            <span class="tour-duration">۷ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۸,۹۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 7 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور قشم" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور قشم</h3>
+                        <p class="tour-description">سفری ۴ روزه به جزیره قشم با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۵ اردیبهشت ۱۴۰۳</span>
+                            <span class="tour-duration">۴ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۷,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 8 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور کوالالامپور" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور کوالالامپور</h3>
+                        <p class="tour-description">سفری ۶ روزه به شهر کوالالامپور با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۰ اردیبهشت ۱۴۰۳</span>
+                            <span class="tour-duration">۶ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۶,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 9 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور شیراز" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور شیراز</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر شیراز با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۵ اردیبهشت ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۵,۲۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 10 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور اصفهان" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور اصفهان</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر اصفهان با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۳۰ اردیبهشت ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 11 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور پاتایا" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور پاتایا</h3>
+                        <p class="tour-description">سفری ۶ روزه به شهر پاتایا با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۵ خرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۶ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۷,۲۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 12 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور تبریز" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور تبریز</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر تبریز با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۰ خرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۹۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 13 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور پوکت" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور پوکت</h3>
+                        <p class="tour-description">سفری ۷ روزه به جزیره پوکت با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۵ خرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۷ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۹,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 14 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور یزد" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور یزد</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر یزد با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۰ خرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۶۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 15 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور کوش آداسی" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور کوش آداسی</h3>
+                        <p class="tour-description">سفری ۵ روزه به شهر کوش آداسی با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۵ خرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۵ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۲,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 16 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور کرمان" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور کرمان</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر کرمان با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۳۰ خرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۷۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 17 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور بالی" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور بالی</h3>
+                        <p class="tour-description">سفری ۸ روزه به جزیره بالی با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۵ تیر ۱۴۰۳</span>
+                            <span class="tour-duration">۸ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۲۲,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 18 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور همدان" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور همدان</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر همدان با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۰ تیر ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 19 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور پناهگاه حیات وحش" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور پناهگاه حیات وحش</h3>
+                        <p class="tour-description">سفری ۲ روزه به پناهگاه حیات وحش با اقامت در اقامتگاه</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۵ تیر ۱۴۰۳</span>
+                            <span class="tour-duration">۲ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۳,۲۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 20 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور ارومیه" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور ارومیه</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر ارومیه با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۰ تیر ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 21 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور سن پترزبورگ" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور سن پترزبورگ</h3>
+                        <p class="tour-description">سفری ۶ روزه به شهر سن پترزبورگ با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۵ تیر ۱۴۰۳</span>
+                            <span class="tour-duration">۶ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۶,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 22 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور بندر عباس" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور بندر عباس</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر بندر عباس با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۳۰ تیر ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۵,۱۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 23 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور مسکو" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور مسکو</h3>
+                        <p class="tour-description">سفری ۵ روزه به شهر مسکو با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۵ مرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۵ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۴,۹۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 24 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور گرگان" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور گرگان</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر گرگان با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۰ مرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۹۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 25 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور تفلیس" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور تفلیس</h3>
+                        <p class="tour-description">سفری ۴ روزه به شهر تفلیس با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۵ مرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۴ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۹,۸۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 26 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور رامسر" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور رامسر</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر رامسر با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۰ مرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۶۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 27 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور باکو" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور باکو</h3>
+                        <p class="tour-description">سفری ۴ روزه به شهر باکو با اقامت در هتل ۵ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۲۵ مرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۴ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۱۰,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 28 -->
+                <div class="tour-card">
+                    <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور چالوس" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور چالوس</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر چالوس با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۳۰ مرداد ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۷۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 29 -->
+                <div class="tour-card">
+                    <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور ایروان" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور ایروان</h3>
+                        <p class="tour-description">سفری ۴ روزه به شهر ایروان با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۵ شهریور ۱۴۰۳</span>
+                            <span class="tour-duration">۴ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۹,۲۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour 30 -->
+                <div class="tour-card">
+                    <img src="images/317868c0821c54076daabef9.jpg" alt="تور نوشهر" class="tour-image">
+                    <div class="tour-content">
+                        <h3 class="tour-title">تور نوشهر</h3>
+                        <p class="tour-description">سفری ۳ روزه به شهر نوشهر با اقامت در هتل ۴ ستاره</p>
+                        <div class="tour-details">
+                            <span class="tour-date">شروع: ۱۰ شهریور ۱۴۰۳</span>
+                            <span class="tour-duration">۳ روز</span>
+                        </div>
+                        <div class="tour-footer">
+                            <span class="tour-price">۴,۵۰۰,۰۰۰ تومان</span>
+                            <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو سازمانی</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
@@ -90,6 +579,5 @@
 
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
-    <script src="js/tours.js"></script>
 </body>
 </html> 
