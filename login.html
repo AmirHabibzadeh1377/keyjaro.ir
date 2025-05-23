@@ -105,7 +105,41 @@
         </div>
     </footer>
 
+    <div id="loader-modal">
+        <div class="plane-loader"></div>
+        <div class="loader-text">برا ورود به سایت توران هدایت میشوید...</div>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle login button
+            document.querySelectorAll('.btn-login').forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var loader = document.getElementById('loader-modal');
+                    loader.style.display = 'flex';
+                    document.querySelector('.loader-text').textContent = 'برا ورود به سایت توران هدایت میشوید...';
+                    setTimeout(function() {
+                        window.location.href = btn.getAttribute('href') || '/login.html';
+                    }, 2000);
+                });
+            });
+
+            // Handle register button
+            document.querySelectorAll('.btn-register').forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var loader = document.getElementById('loader-modal');
+                    loader.style.display = 'flex';
+                    document.querySelector('.loader-text').textContent = 'درحال انتقال به سایت توران برای ثبت نام';
+                    setTimeout(function() {
+                        window.location.href = btn.getAttribute('href') || '/register.html';
+                    }, 2000);
+                });
+            });
+        });
+    </script>
 </body>
 </html> 

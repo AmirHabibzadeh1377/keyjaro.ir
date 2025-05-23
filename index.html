@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +11,64 @@
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
-    .tour-description{
+    .tour-description {
       color: var(--text-light);
+    }
+
+    /* Loader Styles */
+    #loader-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.95);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .plane-loader {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      animation: fly 2s infinite linear;
+    }
+
+    .plane-loader::before {
+      content: '✈️';
+      font-size: 80px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes fly {
+      0% {
+        transform: translateX(-100px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateX(100px) rotate(10deg);
+      }
+
+      100% {
+        transform: translateX(-100px) rotate(0deg);
+      }
+    }
+
+    .loader-text {
+      margin-top: 24px;
+      font-size: 1.2rem;
+      color: #333;
+      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
   <header>
     <nav class="main-nav">
@@ -63,13 +117,13 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="tour-card">
-              <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور شیراز" class="tour-image">
+              <img src="images/شیراز.jpg" alt="تور شیراز" class="tour-image">
               <div class="tour-content">
                 <h3 class="tour-title">تور شیراز ویژه سازمان ها</h3>
                 <p class="tour-description">سفر آغاز آشنایی‌ست، نه فقط با شهر... بلکه با دل‌هایی که کنارت قدم می‌زنند.
-در تور سازمانی شیراز، ما فقط به حافظیه نمی‌رویم؛ به عمق دوستی، همدلی و شناخت هم می‌رویم.
-با همکارانت آشنا شو، نه فقط در کار؛ بلکه در لحظه‌هایی که خندیدن، دیدن و بودن معنا می‌گیرد.
-</p>
+                  در تور سازمانی شیراز، ما فقط به حافظیه نمی‌رویم؛ به عمق دوستی، همدلی و شناخت هم می‌رویم.
+                  با همکارانت آشنا شو، نه فقط در کار؛ بلکه در لحظه‌هایی که خندیدن، دیدن و بودن معنا می‌گیرد.
+                </p>
                 <div class="tour-details">
                   <span class="tour-duration">3 شب و 4 روز</span>
                 </div>
@@ -83,70 +137,46 @@
 
           <div class="swiper-slide">
             <div class="tour-card">
-              <img src="images/BqTp3loCwZRUDJgmIkvSrIeiVAWMOQir2ddwiGgL.jpeg" alt="تور کیش" class="tour-image">
+              <img src="images/جزیره کیش.jpg" alt="تور کیش" class="tour-image">
               <div class="tour-content">
-                <h3 class="tour-title">تور کیش</h3>
-                <p class="tour-description">سفری ۴ روزه به جزیره زیبای کیش</p>
+                <h3 class="tour-title">تور کیش ویژه سازمان ها</h3>
+                <p class="tour-description">تیمی موفق بساز، نه فقط سفر برو
+
+                  با لبخند شروع کن، با هم‌دلی برگرد
+
+                  در کیش، همکار دیروز، دوست امروز می‌شه
+
+                  با احترام، شنیدن و شادی، تیم رو بساز
+
+                  جایی که همکاری از دل می‌جوشه
+
+                  یه سفر برای شناخت واقعی آدم‌ها
+
+                  روابط کاری وقتی عمیق می‌شن که انسانی بشن</p>
                 <div class="tour-details">
-                  <span class="tour-date">شروع: ۲۰ فروردین ۱۴۰۳</span>
-                  <span class="tour-duration">۴ روز</span>
+                  <span class="tour-duration">3 شب و 4 روز</span>
                 </div>
                 <div class="tour-footer">
-                  <a href="tour-details.html" class="btn btn-details">مشاهده جزئیات</a>
+                  <a href="tours/kish-organizational.html" class="btn btn-details">مشاهده جزئیات</a>
                   <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو تور</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="tour-card">
-              <img src="images/317868c0821c54076daabef9.jpg" alt="تور دبی" class="tour-image">
-              <div class="tour-content">
-                <h3 class="tour-title">تور دبی</h3>
-                <p class="tour-description">سفری ۶ روزه به شهر مدرن دبی</p>
-                <div class="tour-details">
-                  <span class="tour-date">شروع: ۲۵ فروردین ۱۴۰۳</span>
-                  <span class="tour-duration">۶ روز</span>
-                </div>
-                <div class="tour-footer">
-                  <a href="tour-details.html" class="btn btn-details">مشاهده جزئیات</a>
-                  <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو تور</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="tour-card">
-              <img src="images/4b8a250b1f45492da2a71b98db65fffc.jpg" alt="تور آنتالیا" class="tour-image">
-              <div class="tour-content">
-                <h3 class="tour-title">تور آنتالیا</h3>
-                <p class="tour-description">سفری ۵ روزه به شهر زیبای آنتالیا</p>
-                <div class="tour-details">
-                  <span class="tour-date">شروع: ۳۰ فروردین ۱۴۰۳</span>
-                  <span class="tour-duration">۵ روز</span>
-                </div>
-                <div class="tour-footer">
-                  <a href="tour-details.html" class="btn btn-details">مشاهده جزئیات</a>
-                  <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو تور</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="swiper-slide">
             <div class="tour-card">
               <img src="images/حرم امام رضا.jpg" alt="تور مشهد" class="tour-image">
               <div class="tour-content">
                 <h3 class="tour-title">تور مشهد ویژه سازمان‌ها</h3>
-                <p class="tour-description">سفری متفاوت با طعم رفاقت و آرامش. بازدید از جاذبه‌های گردشگری مشهد به همراه زیارت حرم مطهر امام رضا (ع).</p>
+                <p class="tour-description">سفری متفاوت با طعم رفاقت و آرامش. بازدید از جاذبه‌های گردشگری مشهد به همراه
+                  زیارت حرم مطهر امام رضا (ع).</p>
                 <div class="tour-details">
-                  <span class="tour-date">شروع: ۵ اردیبهشت ۱۴۰۳</span>
                   <span class="tour-duration">۳ شب و ۴ روز</span>
                 </div>
                 <div class="tour-footer">
-                  <a href="tour/mashhad-organizational" class="btn btn-details">مشاهده جزئیات</a>
+                  <a href="tours/mashhad-organizational.html" class="btn btn-details">مشاهده جزئیات</a>
                   <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو تور</a>
                 </div>
               </div>
@@ -155,13 +185,55 @@
 
           <div class="swiper-slide">
             <div class="tour-card">
-              <img src="images/317868c0821c54076daabef9.jpg" alt="تور قشم" class="tour-image">
+              <img src="images/بندر عباس.jpg" alt="تور بندر عباس" class="tour-image">
               <div class="tour-content">
-                <h3 class="tour-title">تور قشم</h3>
-                <p class="tour-description">سفری ۴ روزه به جزیره زیبای قشم</p>
+                <h3 class="tour-title"> تور بندرعباس ویژه سازمان ها</h3>
+                <p class="tour-description">تجربه‌ای گرم و صمیمی در قلب جنوب ایران
+
+                  سفر به عمق فرهنگ، هم‌دلی و تیم‌سازی
+
+                  بندرعباس؛ جایی برای نفس تازه تیم شما
+
+                  ارتباطی نو، جایی متفاوت، در کنار دریا
+
+                  جنوب، آفتاب، صمیمیت؛ تیم شما لایقشه
+
+                  هم‌سفری که تیم شما رو نزدیک‌تر می‌کنه
+
+                  گشتی متفاوت در بازار، ساحل و دل همکارا</p>
                 <div class="tour-details">
-                  <span class="tour-date">شروع: ۱۰ اردیبهشت ۱۴۰۳</span>
-                  <span class="tour-duration">۴ روز</span>
+                  <span class="tour-duration">۳ شب و ۴ روز</span>
+                </div>
+                <div class="tour-footer">
+                  <a href="tours/bandar-abbas-organizational.html" class="btn btn-details">مشاهده جزئیات</a>
+                  <a href="https://wa.me/989945400368" class="btn btn-book" target="_blank">رزرو تور</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <img src="images/قشم.jpg" alt="تور قشم" class="tour-image">
+              <div class="tour-content">
+                <h3 class="tour-title">تور قشم ویژه سازمان ها</h3>
+                <p class="tour-description">قشم؛ جایی برای کشف هم‌دیگه، نه فقط جزیره
+
+                  سفر کن تا شنونده بهتری برای تیمت بشی
+
+                  جایی برای ساختن دوستی، نه فقط عکس یادگاری
+
+                  ارتباط وقتی واقعی میشه که با دل همراه شه
+
+                  تیم موفق با درک متقابل ساخته میشه، نه با گزارش
+
+                  قشم؛ فرصتی برای شنیدن، دیدن، و درک کردن هم
+
+                  لبخندهایی از دل، نه از روی وظیفه – اینه قشمِ ما
+
+                </p>
+                <div class="tour-details">
+                  <span class="tour-duration">3شب و 4 روز</span>
                 </div>
                 <div class="tour-footer">
                   <a href="tour-details.html" class="btn btn-details">مشاهده جزئیات</a>
@@ -719,6 +791,11 @@
     </div>
   </footer>
 
+  <div id="loader-modal">
+    <div class="plane-loader"></div>
+    <div class="loader-text">برا ورود به سایت توران هدایت میشوید...</div>
+  </div>
+
   <script src="js/main.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/tours.js"></script>
@@ -784,6 +861,35 @@
         },
       },
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      // Handle login button
+      document.querySelectorAll('.btn-login').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          var loader = document.getElementById('loader-modal');
+          loader.style.display = 'flex';
+          document.querySelector('.loader-text').textContent = 'برا ورود به سایت توران هدایت میشوید...';
+          setTimeout(function () {
+            window.location.href = btn.getAttribute('href') || '/login.html';
+          }, 2000);
+        });
+      });
+
+      // Handle register button
+      document.querySelectorAll('.btn-register').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          var loader = document.getElementById('loader-modal');
+          loader.style.display = 'flex';
+          document.querySelector('.loader-text').textContent = 'درحال انتقال به سایت توران برای ثبت نام';
+          setTimeout(function () {
+            window.location.href = btn.getAttribute('href') || '/register.html';
+          }, 2000);
+        });
+      });
+    });
   </script>
 </body>
+
 </html>
